@@ -10,6 +10,7 @@ namespace GADE1B2022
     {
         private Map gameMap;
         private static readonly char heroTile = 'H', emptyTile = 'X', goblinTile = 'G', obstacleTile = 'O';
+        private Shop shop = new Shop();
         public Map GameMap
         {
             get { return gameMap; }

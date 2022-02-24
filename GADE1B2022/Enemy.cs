@@ -13,6 +13,7 @@ namespace GADE1B2022
         private int enemyDamage = 0;
         private int enemyHp = 0;
         private int enemyMaxHp = 0;
+        public int range;
         private int x = 0;
         private int y = 0;
         public delegate int xPos(int x); // ??
@@ -48,7 +49,12 @@ namespace GADE1B2022
         }
         public virtual bool CheckRange(Enemy target)
         {
-            // if target in range then
+            int enemyX = target.EnemyX;
+            int enemyY = target.EnemyY;
+            if ((Math.Abs(this.x - enemyX) <= this.range) ||
+                   (Math.Abs(this.y - enemyY) <= this.range)) // 2.3
+                return true;
+            else return false;
             return true;
         }
     }

@@ -27,7 +27,7 @@ namespace GADE1B2022
             enemyX = target.EnemyX;
             enemyY = target.EnemyY;
             if ((Math.Abs(this.x - enemyX) <= 1) ||
-                   (Math.Abs(this.y - enemyY) <= 1)) // 2.3???
+                   (Math.Abs(this.y - enemyY) <= 1)) // 2.3
                 return true;
             else return false;
 

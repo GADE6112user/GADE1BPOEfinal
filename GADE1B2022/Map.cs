@@ -17,12 +17,15 @@ namespace GADE1B2022
         private int numberOfEnemies = 0;
         Hero Herochar = new Hero(); //A Hero object to represent the player character
         // This character array will be updated at all times to show the status of the map.Remember when initializing your map that it must be bordered with Obstacle tiles around the outside to prevent Character movement outside of the map.
-        private Enemy[] enemyArray = new Enemy[];
+        private Enemy[] enemyArray = new Enemy[2];
+        
         Random Random = new Random(); // A Random object for randomising numbers.
 
 
         public Map (int width, int height, int NumberOfEnemies)
         {
+            enemyArray[0] = Goblin;
+            enemyArray[1] = Mage;
             tilesX = width;
             tilesY = height;
             numberOfEnemies = NumberOfEnemies;
