@@ -28,6 +28,15 @@ namespace GADE1B2022
             y = Y;
 
         }
+        public int EnemyX
+        {
+            get { return x; }
+        }
+        public int EnemyY
+        {
+            get { return y; }
+        }
+        
         public abstract override ToString()
         {
             return; //EnemyClassName at [X, Y] (Amount DMG) 
@@ -37,7 +46,7 @@ namespace GADE1B2022
             Movement movement = new Movement();
             return movement;
         }
-        public virtual bool CheckRange(int range)
+        public virtual bool CheckRange(Enemy target)
         {
             // if target in range then
             return true;
