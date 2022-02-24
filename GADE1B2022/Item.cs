@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GADE1B2022
+namespace GADE1B2022 
 {
     public abstract class Item : Tile
     {

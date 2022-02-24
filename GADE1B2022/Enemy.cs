@@ -32,6 +32,16 @@ namespace GADE1B2022
         {
             return; //EnemyClassName at [X, Y] (Amount DMG) 
         }
+        public virtual Movement ReturnMove()
+        {
+            Movement movement = new Movement();
+            return movement;
+        }
+        public virtual bool CheckRange(int range)
+        {
+            // if target in range then
+            return true;
+        }
     }
     
 }
