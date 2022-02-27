@@ -11,11 +11,11 @@ namespace GADE1B2022
         private int x;
         private int y;
 
-        public RangedWeapon(enum WeaponType, int Durability)
+        public RangedWeapon(Enum WeaponType, int Durability)
         { 
 
         }
-        public RangedWeapon([int X], [int Y], enum RangedWeaponType) // [] optional?
+        public RangedWeapon([int X], [int Y], Enum RangedWeaponType) // [] optional?
         {
             x = X;
             y = Y;

@@ -12,7 +12,7 @@ namespace GADE1B2022
         protected int range; //virtual
         protected int durability;
         protected int cost;
-        protected int weaponType;
+        protected string weaponType;
         private int x;
         private int y;
         private TileType privTileType;
@@ -27,7 +27,7 @@ namespace GADE1B2022
         public virtual int Range { get { return range;} }
         public int Durability { get { return durability;} }
         public int Cost { get { return cost;} }
-        public int WeaponType { get { return weaponType;} }
+        public string WeaponType { get { return weaponType;} }
 
     }
 }

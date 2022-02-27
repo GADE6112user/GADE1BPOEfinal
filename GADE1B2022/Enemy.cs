@@ -42,10 +42,10 @@ namespace GADE1B2022
         {
             return; //EnemyClassName at [X, Y] (Amount DMG) 
         }
-        public virtual Movement ReturnMove()
+        public override MovementEnum ReturnMove(Character target)
         {
-            Movement movement = new Movement();
-            return movement;
+            //MovementEnum movement = new MovementEnum();
+            return target.movement;
         }
         public virtual bool CheckRange(Enemy target)
         {

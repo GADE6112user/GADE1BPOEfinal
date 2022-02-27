@@ -64,6 +64,7 @@ namespace GADE1B2022
             return false;
             else return true;
         }
+        
 
         public virtual bool CheckRange(Enemy target)
         {
@@ -98,13 +99,18 @@ namespace GADE1B2022
 
 
         }
-        public abstract  MovementEnum () ReturnMove(MovementEnum move = 0); // 2.3 ??
+        public virtual MovementEnum ReturnMove(Character target)
+        {
+            // ..MovementEnum movement = new MovementEnum();
+            return target.movement;
+        }
+        public abstract MovementEnum ()  // 2.3 ??
         {
             
         }
         public abstract override ToString()
         {
-            return;
+            return "";
         }
     }
 }

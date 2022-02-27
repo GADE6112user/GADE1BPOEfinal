@@ -36,7 +36,7 @@ namespace GADE1B2022
             Dagger,
             Longsword
         }
-        public override int Range
+        public int Range
         {
             get { return 1; }
         }
