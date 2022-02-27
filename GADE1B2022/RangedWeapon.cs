@@ -46,5 +46,6 @@ namespace GADE1B2022
         {
             get { return base.Range; }
         }
+
     }
 }

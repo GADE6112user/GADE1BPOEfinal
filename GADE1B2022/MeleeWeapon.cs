@@ -11,19 +11,22 @@ namespace GADE1B2022
         private int intWeaponType;
         private int x;
         private int y;
-        public MeleeWeapon([int X], [int Y], enum MeleeWeaponType) // [] optional?
+        int durability;
+        int damage;
+        int cost;
+        public Type MeleeWeapon([int X], [int Y], int intWeaponType) // [] optional?
         {
             x = X;
             y = Y;
 
-            if (int MeleeWeaponType == 0)
+            if (MeleeWeaponType.Dagger.Equals(intWeaponType))
             {
                 string weapontype = "Dagger";
-                int durability = 10;
-                int damage = 3;
-                int cost = 3;
+                durability = 10;
+                damage = 3;
+                cost = 3;
             }
-            if (int MeleeWeaponType == 1)
+            if (MeleeWeaponType.Longsword.Equals(intWeaponType))
             {
                 string weapontype = "Longsword";
                 int durability = 6;
@@ -36,9 +39,12 @@ namespace GADE1B2022
             Dagger,
             Longsword
         }
-        public int Range
+        public override int Range
         {
             get { return 1; }
         }
     }
+
 }
+
+

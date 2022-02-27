@@ -41,11 +41,11 @@ namespace GADE1B2022
         }
         public enum MovementEnum
         {
-            No_Movement,
-            Up,
-            Down,
-            Left,
-            Right
+            No_Movement = 5,
+            Up = 1,
+            Down = 2,
+            Left = 3,
+            Right = 4
         }
         public MovementEnum movement
         {
