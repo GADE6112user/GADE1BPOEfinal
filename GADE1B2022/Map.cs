@@ -22,7 +22,7 @@ namespace GADE1B2022
         Random Random = new Random(); // A Random object for randomising numbers.
 
 
-        public Map (int width, int height, int NumberOfEnemies)
+        public Map (int width, int height, int NumberOfEnemies, Weapon weaponDrop)
         {
             enemyArray[0] = Goblin;
             enemyArray[1] = Mage;

@@ -10,7 +10,10 @@ namespace GADE1B2022
     {
         private int x;
         private int y;
+        public RangedWeapon()
+        {
 
+        }
         public RangedWeapon(Enum WeaponType, int Durability)
         { 
 

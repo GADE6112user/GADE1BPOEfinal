@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace GADE1B2022
 {
     public class Character : Tile
-    {
+    { //left on 2.5 poe
         protected int hp;
         protected int maxHp;
         protected int damage;
@@ -16,10 +16,21 @@ namespace GADE1B2022
         protected int range;
         protected Tile[] CharacterVison = new Tile[3];
         public readonly Character ctype;
+        protected int goldAmount;
+        //private Weapon weapon;
+        public Character()
+        {
+
+        }
         public int Hp
         {
             get { return hp; }
             set { hp = value; }
+        }
+        public int GoldAmount
+        {
+            get { return goldAmount; }
+            set { goldAmount = value; }
         }
         protected int MaxHp
         {
@@ -64,7 +75,10 @@ namespace GADE1B2022
             return false;
             else return true;
         }
-        
+        public void PickUp(Weapon weapon)
+        {
+            //pick up weapon from shop
+        }
 
         public virtual bool CheckRange(Enemy target)
         {
